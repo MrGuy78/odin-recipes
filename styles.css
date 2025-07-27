@@ -9,8 +9,6 @@ body, html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)), url("./images/Odin_Viking_Symbols.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +22,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 60px;
     font-family: Papyrus, fantasy;
 }
