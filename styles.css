@@ -15,7 +15,6 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
 }
 
 .hero-text {
@@ -57,11 +56,11 @@ body, html {
 .pizza-div {
     background-image: 
         linear-gradient(to right, 
-        rgba(132, 129, 129, 1) 0%,        /* Gray */
-        rgba(97, 3, 3, 1) 10%,            /* Fade to red */
+        rgba(132, 129, 129, 1) 0%,
+        rgba(97, 3, 3, 1) 10%, 
         rgba(0, 0, 0, 1) 40%,
-        rgba(0, 0, 0, 1) 60%,            /* Fade to black (center) */
-        rgba(97, 3, 3, 1) 90%,            /* Fade back to red */
+        rgba(0, 0, 0, 1) 60%,
+        rgba(97, 3, 3, 1) 90%, 
         rgba(132, 129, 129, 1) 100%);
     border-top: 3px solid black;
 }
@@ -77,18 +76,43 @@ body, html {
         rgba(111, 60, 9, 1) 100%);
 }
 
+.salmon-div {
+    background-image: 
+        linear-gradient(to right,
+        rgba(209, 149, 69, 1) 0%,
+        rgba(185, 149, 102, 1) 10%,
+        rgba(0, 0, 0, 1) 30%,
+        rgba(0, 0, 0, 1) 70%, 
+        rgba(185, 149, 102, 1) 90%,
+        rgba(209, 149, 69, 1) 100%);
+}
+
+.lutefisk-div {
+    background-image: 
+        linear-gradient(to right,
+                        rgba(175, 170, 163, 1) 0%,
+                        rgba(209, 183, 150, 1) 10%,
+                        rgba(0, 0, 0, 1) 40%,
+                        rgba(0, 0, 0, 1) 60%,
+                        rgba(209, 183, 150, 1) 90%,
+                        rgba(175, 170, 163, 1) 100%);
+}
+
 .ingredients-header {
     padding: 20px;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .menu-link {
+    display: inline-block;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease;
 }
 
 .menu-link:hover {
-    color: darkgoldenrod;
+    transform: scale(1.2);
+    color: rgba(184, 134, 11, 1);
 }
 
 .home-button {
@@ -103,8 +127,10 @@ body, html {
     padding: 15px 30px;
     margin: 20px;
     box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+    transition: transform 0.3s ease;
 }
 
 .home-button:hover {
+    transform: scale(1.2);
     color: rgba(255, 255, 255, 1);
 }
