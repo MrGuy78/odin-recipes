@@ -29,7 +29,11 @@ body, html {
 }
 
 .vertical-menu a {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgb(46, 37, 55), rgba(0, 0, 0, 1));
+    background-image: 
+        linear-gradient(to right, 
+                              rgba(0, 0, 0, 1), 
+                              rgb(46, 37, 55), 
+                              rgba(0, 0, 0, 1));
     color: darkgoldenrod;
     display: block;
     padding: 15px;
@@ -38,21 +42,41 @@ body, html {
     font-size: 25px;
 }
 
-.ingredients-header {
-    padding: 20px;
-}
-
-.ingredients-list {
-    background-image: linear-gradient(to right, rgba(132, 129, 129, 1)0%,
-                                                rgba(97, 3, 3, 1) 10%, rgb(97, 3, 3, 1) 90%, 
-                                                rgba(132, 129, 129, 1) 100%);
+.pizza-div {
+    background-image: 
+        linear-gradient(to right, 
+        rgba(132, 129, 129, 1) 0%,        /* Gray */
+        rgba(97, 3, 3, 1) 10%,            /* Fade to red */
+        rgba(0, 0, 0, 1) 40%,
+        rgba(0, 0, 0, 1) 60%,            /* Fade to black (center) */
+        rgba(97, 3, 3, 1) 90%,            /* Fade back to red */
+        rgba(132, 129, 129, 1) 100%);
     text-align: center;
     color: rgba(211, 211, 211, 0.9);
 }
 
+.ingredients-header {
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ingredients {
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+#pizza-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#pizza-link:hover {
+    color: darkgoldenrod;
+}
+
 .home-button {
     background-color: rgb(46, 37, 55);
-    color: white;
+    color: darkgoldenrod;
     padding: 10px 20px;
     text-decoration: none;
     border: none;
@@ -61,4 +85,9 @@ body, html {
     border-radius: 10px;
     padding: 15px 30px;
     margin: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+}
+
+.home-button:hover {
+    color: rgba(255, 255, 255, 1);
 }
