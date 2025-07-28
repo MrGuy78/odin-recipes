@@ -15,6 +15,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 }
 
 .hero-text {
@@ -40,6 +41,17 @@ body, html {
     text-decoration: none;
     text-align: center;
     font-size: 25px;
+    transition: transform 0.3s ease;
+}
+
+.vertical-menu a:hover {
+    transform: scale(1.2);
+    color: rgba(255, 255, 255, 1);
+}
+
+.ingredients {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
 
 .pizza-div {
@@ -51,8 +63,18 @@ body, html {
         rgba(0, 0, 0, 1) 60%,            /* Fade to black (center) */
         rgba(97, 3, 3, 1) 90%,            /* Fade back to red */
         rgba(132, 129, 129, 1) 100%);
-    text-align: center;
-    color: rgba(211, 211, 211, 0.9);
+    border-top: 3px solid black;
+}
+
+.mule-div {
+    background-image: 
+        linear-gradient(to right, 
+        rgba(111, 60, 9, 1) 0%,
+        rgba(51, 51, 51, 1) 10%,
+        rgba(0, 0, 0, 1) 40%,
+        rgba(0, 0, 0, 1) 60%, 
+        rgba(51, 51, 51, 1) 90%, 
+        rgba(111, 60, 9, 1) 100%);
 }
 
 .ingredients-header {
@@ -60,17 +82,12 @@ body, html {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.ingredients {
-    color: rgba(255, 255, 255, 0.8);
-
-}
-
-#pizza-link {
+.menu-link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
 
-#pizza-link:hover {
+.menu-link:hover {
     color: darkgoldenrod;
 }
 
