@@ -62,7 +62,6 @@ body, html {
         rgba(0, 0, 0, 1) 60%,
         rgba(97, 3, 3, 1) 90%, 
         rgba(132, 129, 129, 1) 100%);
-    border-top: 3px solid black;
 }
 
 .mule-div {
